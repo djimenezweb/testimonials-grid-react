@@ -1,47 +1,68 @@
-const testimonials =
-      [
-        {
-background #733fc8
-text #fff
-border #a775f1
-"./images/image-daniel.jpg"
-Daniel Clifford
-Verified Graduate
-I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
-“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
-        },
-        {#48556a
-#fff
-#48556a
-"./images/image-jonathan.jpg"
-Jonathan Walters
-Verified Graduate
-The team was very supportive and kept me motivated
-“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”
-        },
-        {#fff
-#48556a
-#fff
-"./images/image-jeanette.jpg"
-Jeanette Harmon
-Verified Graduate
-An overall wonderful and rewarding experience
-“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”
-        },
-        {#19202d
-#fff
-#733fc8
-"./images/image-patrick.jpg"
-Patrick Abrams
-Verified Graduate
-Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.
-“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”
-        },
-        {#fff
-#48556a
-#fff
-"./images/image-kira.jpg"
-Kira Whittle
-Verified Graduate
-Such a life-changing experience. Highly recommended!
-“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”}]
+import { v4 } from 'uuid';
+
+const testimonials = [
+	{
+		id: v4(),
+		bgColor: '#733fc8',
+		textColor: '#fff',
+		borderColor: '#a775f1',
+		iconSrc: 'assets/images/image-daniel.jpg',
+		name: 'Daniel Clifford',
+		position: 'Verified Graduate',
+		testimonialTitle:
+			'I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.',
+		testimonial:
+			'“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”'
+	},
+	{
+		id: v4(),
+		bgColor: '#48556a',
+		textColor: '#fff',
+		borderColor: '#48556a',
+		iconSrc: 'assets/images/image-jonathan.jpg',
+		name: 'Jonathan Walters',
+		position: 'Verified Graduate',
+		testimonialTitle: 'The team was very supportive and kept me motivated',
+		testimonial:
+			'“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”'
+	},
+	{
+		id: v4(),
+		bgColor: '#fff',
+		textColor: '#48556a',
+		borderColor: '#fff',
+		iconSrc: 'assets/images/image-jeanette.jpg',
+		name: 'Jeanette Harmon',
+		position: 'Verified Graduate',
+		testimonialTitle: 'An overall wonderful and rewarding experience',
+		testimonial:
+			'“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”'
+	},
+	{
+		id: v4(),
+		bgColor: '#19202d',
+		textColor: '#fff',
+		borderColor: '#733fc8',
+		iconSrc: 'assets/images/image-patrick.jpg',
+		name: 'Patrick Abrams',
+		position: 'Verified Graduate',
+		testimonialTitle:
+			'Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.',
+		testimonial:
+			'“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”'
+	},
+	{
+		id: v4(),
+		bgColor: '#fff',
+		textColor: '#48556a',
+		borderColor: '#fff',
+		iconSrc: 'assets/images/image-kira.jpg',
+		name: 'Kira Whittle',
+		position: 'Verified Graduate',
+		testimonialTitle: 'Such a life-changing experience. Highly recommended!',
+		testimonial:
+			'“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”'
+	}
+];
+
+export { testimonials };
