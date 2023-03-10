@@ -33,7 +33,10 @@ const StyledMainContainer = styled.div`
 	& > :nth-child(1) {
 		background-image: url('/assets/images/bg-pattern-quotation.svg');
 		background-repeat: no-repeat;
-		background-position: 80% 0;
+		background-position: 100% 0;
+		@media screen and (min-width: 768px) {
+			background-position: 80% 0;
+		}
 	}
 `;
 
